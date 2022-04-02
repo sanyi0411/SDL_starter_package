@@ -13,9 +13,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 include_directories(submodules/googletest/googletest/include/gtest)
 include_directories(submodules/SDL/include)
+include_directories(submodules/SDL_image)
 
 add_subdirectory(submodules/googletest)
 add_subdirectory(submodules/SDL)
+add_subdirectory(submodules/SDL_image)
 
 include_directories(src)
 add_subdirectory(src)
